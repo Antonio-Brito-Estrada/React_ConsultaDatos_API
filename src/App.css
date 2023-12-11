@@ -14,18 +14,28 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(16, 72, 175);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.label {
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fbab61;
+}
+
+.labelColor {
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +45,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+form select{
+  min-width: 263px;
+  max-width: 263px;
+}
+form input[type="submit"],
+form button {
+  display: block;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fbab61;
+  color: antiquewhite;
+  border:  1px solid rgb(12, 168, 25);
+  transition: all 300ms;
+}
+
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: #d30909;
+  color: rgb(0, 0, 0);
 }
